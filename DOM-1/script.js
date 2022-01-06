@@ -19,8 +19,6 @@ container.appendChild(head3);
 const subContent = document.createElement('div')
 subContent.setAttribute('style', 'border: 5px solid black; background-color: pink');
 
-container.appendChild(subContent);
-
 const head1 = document.createElement('h1');
 head1.textContent = 'I\'m in a div'
 
@@ -29,3 +27,5 @@ para2.textContent = 'ME TOO!';
 
 subContent.appendChild(head1);
 subContent.appendChild(para2);
+container.appendChild(subContent);
+
