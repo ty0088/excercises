@@ -29,3 +29,26 @@ subContent.appendChild(head1);
 subContent.appendChild(para2);
 container.appendChild(subContent);
 
+// const btn = document.querySelector('#btn');
+// btn.addEventListener('click', () => {
+//     alert("You pressed a button!")
+// });
+
+// function alertFunction(e) {
+//     //alert("You pressed my button!");
+//     console.log(e.target);
+//     e.target.style.background = 'blue';
+// }
+
+// btn.addEventListener('click', alertFunction);
+
+const buttons = document.querySelectorAll('button');
+
+buttons.forEach((button) => {
+
+    button.addEventListener('click', () => {
+        alert(button.id);
+    });
+
+});
+
