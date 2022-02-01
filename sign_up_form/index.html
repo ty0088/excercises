@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOP Sign Up Form</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <div class="sidebar">
+            <div class="logo-container">
+                <img src="odin-lined.png" alt="Odin Logo">
+                <span>ODIN</span>
+            </div>
+            <span class="credits">Photo by Ren Ran on <a href="https://unsplash.com/@renran">unsplash</a></span>
+        </div>
+        <div class="form-container">
+            <div class="banner">
+                <span>This is not a real online service! You know you need something 
+                    like this in your life to help you realize your deepest dreams. 
+                    <br> Sign up <em>now</em> to get started.
+                    <br>
+                    <br>You <em>know</em> you want to.
+                </span>
+            </div>
+            <div class="form">
+                <span>Let's do this!</span>
+                <form action="http://httpbin.org/post" method="post">
+                    <div class="input-row">
+                        <div class="input-box">
+                            <label for="first_name">FIRST NAME</label>
+                            <input type="text" id="first_name" name="first_name">   
+                        </div>
+                        <div class="input-box">
+                            <label for="last_name">LAST NAME</label>
+                            <input type="text" id="last_name" name="last_name">   
+                        </div>
+                    </div>
+                    <div class="input-row">
+                        <div class="input-box">
+                            <label for="email">EMAIL</label>
+                            <input type="email" id="email" name="email">   
+                        </div>
+                        <div class="input-box">
+                            <label for="phone">PHONE NUMBER</label>
+                            <input type="tel" id="phone" name="phone_num">   
+                        </div>
+                    </div>
+                    <div class="input-row">
+                        <div class="input-box">
+                            <label for="password">PASSWORD</label>
+                            <input type="password" id="password" name="password">   
+                        </div>
+                        <div class="input-box">
+                            <label for="pass_con">CONFIRM PASSWORD</label>
+                            <input type="password" id="pass_con" name="pass_confirm">   
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="btn-container"></div>
+        </div>
+    </div>
+    
+</body>
+</html>

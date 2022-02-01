@@ -1,0 +1,143 @@
+@font-face {
+    font-family: norseFont;
+    src: url(Norse-Bold.otf);
+  }
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Lato, "Lucida Grande", Tahoma, Sans-Serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    height: 100vh;
+    width: 80vw;
+    min-width: 900px;
+    min-height: 700px;
+    justify-content: center;
+}
+
+.sidebar {
+    position: relative;
+    width: 40%;
+    height: 100%;
+    background-image: url("unsplash.jpg");
+    background-size: cover;
+    z-index: 2;
+}
+
+.logo-container {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 20%;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.logo-container > img {
+    flex: 0;
+    height: 140px;
+    position: relative;
+    top: 0;
+    bottom: 0;
+}
+
+.logo-container > span {
+    flex: 0;
+    font-family: norseFont;
+    font-size: 100px;
+    color: white;
+}
+
+span.credits {
+    position: absolute;
+    bottom: 0;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    color: white;
+}
+
+.form-container {
+    margin: 0;
+    padding: 0;
+    width: 70%;
+    height: 100%;
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0 0 0 35px;
+    height: 33.3%;
+    min-height: 200x;
+    background-color: rgb(240, 240, 240);
+    font-family: 'Lato', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.form {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 20px 35px 20px 35px;
+    height: 33.3%;
+    min-height: 300px;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    z-index: 1;
+    box-shadow: -2px 5px 5px rgb(200, 200, 200);
+}
+
+.form > span {
+    font-family: 'Lato', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 25px 0 0 0;
+}
+
+form > .input-row {
+    display: flex;
+    flex-direction: row;
+    column-gap: 100px;
+    margin: 0 0 20px 0;
+}
+    
+label {
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    letter-spacing: 3px;
+    font-weight: 600;
+}
+
+input {
+    height: 20px;
+    margin: 10px 0 0 0;
+}
+
+.btn-container {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 35px;
+    height: 33.3%;
+    min-height: 200px;
+    background-color: rgb(240, 240, 240);
+}
