@@ -1,0 +1,59 @@
+.container {
+    height: 600px;
+    width: 350px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.link {
+    cursor: pointer;
+}
+
+.menu-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+    width: 45px;
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 50px;
+    transition: all 300ms ease-out 100ms;
+    overflow: hidden;
+}
+
+.material-icons.md-40 {
+    font-size: 45px;
+}
+
+.material-icons.md-35{
+    font-size: 35px;
+    transition: all 360ms ease-in 50ms;
+}
+
+.left {
+    position: relative;
+    left: -5px;
+}
+
+.right {
+    position: relative;
+    left: 5px;
+}
+
+.menu-container.expand {
+    width: 250px;
+}
+
+.left.expand {
+    position: relative;
+    left: -40px;
+}
+
+.right.expand {
+    position: relative;
+    left: 40px;
+}
