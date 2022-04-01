@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drop-down Menu</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div id="container">
+        <div class="menu-container" data-menu="1">
+            <div class="main-button link">
+                Menu1<span class="material-icons link drop-icon" data-menu="1">arrow_drop_down</span>
+            </div>
+            <div class="drop-down" data-menu="1">
+                <span class="link">Account</span>
+                <span class="link">Profile</span>
+                <span class="link">Settings</span>
+                <span class="link">Help</span>
+            </div>
+        </div>
+        <div class="menu-container" data-menu="2">
+            <div class="main-button link">
+                Menu2<span class="material-icons link drop-icon" data-menu="2">arrow_drop_down</span>
+            </div>
+            <div class="drop-down" data-menu="2">
+                <span class="link">Account</span>
+                <span class="link">Profile</span>
+                <span class="link">Settings</span>
+                <span class="link">Help</span>
+            </div>
+        </div>
+        <div class="menu-container" data-menu="3">
+            <div class="main-button link">
+                Menu3<span class="material-icons link drop-icon" data-menu="3">arrow_drop_down</span>
+            </div>
+            <div class="drop-down" data-menu="3">
+                <span class="link">Account</span>
+                <span class="link">Profile</span>
+                <span class="link">Settings</span>
+                <span class="link">Help</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+.initial {
+    height: 20px;
+    width: 100px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    transition: height 500ms ease-in-out 100ms, width 500ms ease-in-out 100ms;
+}
+
+.transition {
+    height: 100px;
+}
+
+.initial:hover {
+    width: 200px;
+}
