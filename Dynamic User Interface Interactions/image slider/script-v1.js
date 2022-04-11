@@ -6,7 +6,6 @@ function clickListeners() {
 
 //controller functions
 const slideController  = (() => {
-    
     let currImgPos = 0;
     let nextImgPos = 0;
     let transPx = 0;
@@ -47,8 +46,8 @@ const slideController  = (() => {
                 transPx  = transPx - imgElems[i].getBoundingClientRect().width;
             }
         } else if (currImgPos > nextImgPos) {
-            for (let i = nextImgPos + 1; i <= currImgPos; i++) {
-                transPx  = transPx + imgElems[i - 1].getBoundingClientRect().width;
+            for (let i = nextImgPos; i < currImgPos; i++) {
+                transPx  = transPx + imgElems[i].getBoundingClientRect().width;
             }
         } else {
             return ;
@@ -117,6 +116,5 @@ const domController = (() => {
     }
 })();
 
-//All others
 clickListeners();
 domController.firstLoad();
