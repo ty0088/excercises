@@ -3,8 +3,7 @@ import {
     reverseStr,
     calculator,
     caesarCipher,
-    analyseArray,
-    caesarCipher2
+    analyseArray
 } from './script'
 
 test('Capitalise example 1', () => {
