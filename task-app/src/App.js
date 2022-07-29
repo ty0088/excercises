@@ -17,7 +17,6 @@ class App extends Component {
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
     this.deleteTask = this.deleteTask.bind(this);
-    this.editTask = this.editTask.bind(this);
   }
 
   handleChange(event) {
@@ -55,14 +54,6 @@ class App extends Component {
         num: i + 1
       }
     })});
-  }
-
-  editTask(event) {
-    if (this.state.text === 'Edit') {
-      this.setState({text: 'Submit'})
-    } else {
-      this.setState({text: 'Edit'})
-    }
   }
 
   render() {
