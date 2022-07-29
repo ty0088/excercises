@@ -60,7 +60,7 @@ class App extends Component {
     const { taskArr, task } = this.state;
     return (
       <div>
-        <Overview tasks={taskArr} deleteClicked={this.deleteTask} editClicked={this.editTask} editSubmit={this.state.text}/>
+        <Overview tasks={taskArr} deleteClicked={this.deleteTask} />
         <form onSubmit={this.handleSubmit}>
           <label htmlFor="input">
             Enter Task Name:
